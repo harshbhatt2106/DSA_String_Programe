@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1_Revers_String", "DSA_Programe_String\1_Revers_String.csproj", "{981B8435-2D7D-44C6-944A-11C464ABDBD5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_Pelendrome_or_Not", "2_Pelendrome_or_Not\2_Pelendrome_or_Not.csproj", "{DAEF0779-8D87-4C68-BFC9-F6BDAB8CE599}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Print all the duplicate characters in a string", "Print all the duplicate characters in a string\Print all the duplicate characters in a string.csproj", "{619EB0DD-4983-4978-AD2D-28EEEA1C4222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Check if Strings Are Rotations of Each Other", "Check if Strings Are Rotations of Each Other\Check if Strings Are Rotations of Each Other.csproj", "{D9FB1686-5649-432D-9820-55A54F0F0F5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{DAEF0779-8D87-4C68-BFC9-F6BDAB8CE599}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAEF0779-8D87-4C68-BFC9-F6BDAB8CE599}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAEF0779-8D87-4C68-BFC9-F6BDAB8CE599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{619EB0DD-4983-4978-AD2D-28EEEA1C4222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{619EB0DD-4983-4978-AD2D-28EEEA1C4222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{619EB0DD-4983-4978-AD2D-28EEEA1C4222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{619EB0DD-4983-4978-AD2D-28EEEA1C4222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9FB1686-5649-432D-9820-55A54F0F0F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9FB1686-5649-432D-9820-55A54F0F0F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9FB1686-5649-432D-9820-55A54F0F0F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9FB1686-5649-432D-9820-55A54F0F0F5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
