@@ -13,7 +13,6 @@ namespace Find_Longest_Recurring_Subsequence_in_String
         {
             string value = "AABEBCDD";
             int LongestSubstringCount = 0;
-            int count = 0;
 
             for (int i = 0; i < value.Length; i++)
             {
