@@ -12,23 +12,25 @@ namespace Check_if_Strings_Are_Rotations_of_Each_Other
         static void Main(string[] args)
         {
             string s1 = "aba";
-            string s2 = "aab";
+            string s2 = "aabc";
+            StringBuilder stringBuilder1 = new StringBuilder(s2);
 
             char temp;
             bool IsRotate = false;
-            for (int i = 0; i < s1.Length; i++)
+
+            for (int i = 1; i <= s1.Length; i++)
             {
-                if (s1 == s2)
+                if (s1 == stringBuilder1.ToString())
                 {
                     IsRotate = true;
                     break;
                 }
                 else
                 {
-                    temp = s1[i];
-                    s1 = temp + s1.Substring(0, s1.Length - 1);
+                    temp = stringBuilder1[i-1];
+                    stringBuilder1[i - 1] = stringBuilder1[i];
+                    stringBuilder1[i] = temp;
                 }
-
             }
             if (IsRotate)
             {

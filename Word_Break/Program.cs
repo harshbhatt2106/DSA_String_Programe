@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Word_Break
 {
@@ -34,7 +29,7 @@ namespace Word_Break
                 }
                 if (WordFound)
                 {
-                    if (IterationCount==2 && WordFound)
+                    if (IterationCount == 2 && WordFound)
                     {
                         Is = true;
                         break;

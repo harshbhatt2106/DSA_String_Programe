@@ -8,29 +8,28 @@ namespace Print_all_the_duplicate_characters_in_a_string
         {
             Console.Write("Enter string ");
             string a = Console.ReadLine();
-            Char[] name = a.ToCharArray();
-            Array.Sort(name);
-
+            char[] name = a.ToCharArray();
             int count = 1;
-
             for (int i = 0; i < name.Length; i++)
             {
-                for (int j = i; j < name.Length - 1; j++)
+                char word = name[i];
+                if (word != '-')
                 {
-                    if (name[j] == name[j + 1])
+                    for (int j = i + 1; j < name.Length; j++)
                     {
-                        count++;
-                        i++;
+                        if (word == name[j])
+                        {
+                            name[j] = '-';
+                            name[i] = '-';
+                            count++;
+                        }
                     }
-                    else
-                    {
-                        break;
-                    }
+                    Console.WriteLine(" " + word + " " + count);
                 }
-                Console.WriteLine(" " + name[i] + " " + count);
                 count = 1;
             }
             Console.ReadLine();
         }
+
     }
 }

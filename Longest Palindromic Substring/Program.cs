@@ -6,21 +6,21 @@ namespace Longest_Palindromic_Substring
     {
         static void Main(string[] args)
         {
-            //forgeeksskeegfor
-            string value = "forgeeksskeegfor";
+            string value = "harshlopolt";
             string CurrentPelendrome;
             string LongestPelendrome = string.Empty;
 
             for (int i = 0; i < value.Length; i++)
             {
+                string temp = value[i].ToString();
                 for (int j = i + 1; j < value.Length; j++)
                 {
+                    temp += value[j].ToString();
                     if (MyClass.Ispelendrome(value, i, j))
                     {
-                        CurrentPelendrome = value.Substring(i, j - i);
-                        if (CurrentPelendrome.Length > LongestPelendrome.Length)
+                        if (temp.Length > LongestPelendrome.Length)
                         {
-                            LongestPelendrome = CurrentPelendrome;
+                            LongestPelendrome = temp;
                         }
                     }
                 }
@@ -33,15 +33,14 @@ namespace Longest_Palindromic_Substring
     {
         public static bool Ispelendrome(string input, int start, int end)
         {
-            end--;
-            while (start < end)
+            while (start<end)
             {
                 if (input[start] != input[end])
                 {
                     return false;
                 }
-                end--;
                 start++;
+                end--;
             }
             return true;
         }

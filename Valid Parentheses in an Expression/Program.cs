@@ -15,7 +15,8 @@ namespace Valid_Parentheses_in_an_Expression
             string input = Console.ReadLine();
 
             Stack<char> stack = new Stack<char>();
-
+            
+            
             for (int i = 0; i < input.Length; i++)
             {
                 if (input[i] == '(' || input[i] == '[' || input[i] == '{')

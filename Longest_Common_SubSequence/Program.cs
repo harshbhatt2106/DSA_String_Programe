@@ -13,7 +13,6 @@ namespace Longest_Common_SubSequence
             string input1 = "HARSHBHATT";
             string input2 = "HABSBHATT";
             string answer = "";
-
             int index;
             for (int i = 0; i < input1.Length; i++)
             {

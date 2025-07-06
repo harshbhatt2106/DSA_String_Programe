@@ -10,8 +10,9 @@ namespace Look_and_Say_Sequence
     {
         static void Main(string[] args)
         {
+            //1, 11, 21, 1211, 111221, 312211, 13112221, 1113213211 
             string number = "11";
-            Console.Write("Enter element");
+            Console.Write("Enter element:");
             int n = int.Parse(Console.ReadLine());
             if (n == 1)
             {
@@ -23,10 +24,10 @@ namespace Look_and_Say_Sequence
                 number = "11";
                 return;
             }
-            int count = 1;
-            string newstring = "";
 
-            //1, 11, 21, 1211, 111221, 312211, 13112221, 1113213211, 
+            int count = 1;
+            string temp = "";
+
             for (int i = 3; i <= n; i++)
             {
                 for (int j = 1; j < number.Length; j++)
@@ -37,14 +38,13 @@ namespace Look_and_Say_Sequence
                     }
                     else
                     {
-                        newstring += count.ToString() + number[j - 1];
+                        temp += count.ToString() + number[j - 1];
                         count = 1;
                     }
                 }
-                newstring += count.ToString() + number[number.Length - 1];
-                number = "";
-                number = newstring;
-                newstring = "";
+                temp += count.ToString() + number[number.Length - 1];
+                number = temp;
+                temp = "";
                 count = 1;
             }
             Console.WriteLine(number);

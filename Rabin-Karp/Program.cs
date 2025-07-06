@@ -10,11 +10,10 @@ namespace Rabin_Karp
     {
         static void Main(string[] args)
         {
-            string Input = "HARSH BHATT HARSH";
-            string Find = "HAR";
+            string Input = "THIS IS A TEST TEXT";
+            string Find = "TEST";
 
             bool IsFind = false;
-            int MatchIndex = 0;
             int index = 0;
 
             for (int i = 0; i < Input.Length; i++)
@@ -26,7 +25,6 @@ namespace Rabin_Karp
                     if (Input[index] == Find[j])
                     {
                         IsFind = true;
-                        MatchIndex = i;
                         if (i < Input.Length - 1)
                         {
                             index++;
@@ -35,14 +33,20 @@ namespace Rabin_Karp
                     else
                     {
                         IsFind = false;
-                        MatchIndex = 0;
                         break;
                     }
                 }
                 if (IsFind)
                 {
-                    Console.WriteLine(MatchIndex);
+                    IsFind = true;
+                    Console.WriteLine(i);
+                    break;
                 }
+            }
+
+            if (!IsFind)
+            {
+                Console.WriteLine("String not found");
             }
             Console.ReadLine();
         }

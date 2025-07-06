@@ -18,6 +18,7 @@ namespace Revers_String
     }
     static class myclass
     {
+       
         public static string Revers(string value)
         {
             StringBuilder stringBuilder = new StringBuilder();

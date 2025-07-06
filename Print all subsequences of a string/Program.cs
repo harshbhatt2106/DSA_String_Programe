@@ -6,20 +6,14 @@ namespace Print_all_subsequences_of_a_string
     {
         static void Main(string[] args)
         {
-            string value = "Geeks";
-            string concatestring = "";
-            int len = value.Length;//5
-
-            for (int i = 0; i < len; i++)
+            string input = Console.ReadLine();
+            for (int i = 0; i < input.Length; i++)
             {
-                for (int j = 0; j < len - i; j++)
+                string stringBuilder = string.Empty;
+                for (int j = i; j < input.Length; j++)
                 {
-                    concatestring = "";
-                    for (int k = j; k <= j + i; k++)
-                    {
-                        concatestring += value[k];
-                    }
-                    Console.WriteLine(concatestring);
+                    stringBuilder += input[j];
+                    Console.WriteLine(stringBuilder);
                 }
             }
             Console.ReadLine();
